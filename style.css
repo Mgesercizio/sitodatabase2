@@ -1,0 +1,336 @@
+body{
+    background-color: black;
+    font-family: monospace;
+    color: white;
+}
+
+h1{padding-left:30px;
+font-family:monospace;}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container div{
+    padding:15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+} 
+a:hover{
+    color: red;
+    font-weight:900;
+}
+
+.header{
+    width: 1000px;
+    float:right;
+    display:flex;
+    /*border: 4px solid white;*/
+}
+.header div{
+    padding: 10px;
+    flex: auto;
+    text-align: center;
+}
+
+
+.generi{
+    width:100%;
+    display: flex;
+}
+.generi div{
+    padding-right: 30px;
+    padding-left:30px;
+    flex:auto;
+    text-align:center;
+}
+.btngeneri{
+    font-family:monospace;
+    width:100%;
+    height:75px;
+    background-color:black;
+    border: 2px solid white;
+    border-radius:10%;
+    color:white;
+    transition: 0.2s ease;
+}
+.btngeneri:hover{
+    border:2px solid red;
+    color:red;
+}
+
+
+.wrapper {
+  --bg-color: #ff0000;
+  --main-color: #fcfcfc;
+  position: relative;
+  width: 250px;
+  height: 36px;
+  background-color: black;
+  border: 2px solid var(--main-color);
+  border-radius: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  box-shadow: 4px 4px var(--main-color);
+}
+
+.option {
+  width: 100px;
+  height: 25px;
+  position: relative;
+  left: 2px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.inputRadio {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.btn {
+  width: 300px;
+  height: 100%;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.inputRadio:checked + .btn {
+  background-color: red;
+}
+.inputRadio:hover + .btn{
+    border: 2px solid red;
+}
+
+.span {
+  color: white;
+}
+
+.credentials>*{
+    border-radius: 10px;
+    width:295px;
+    height:20px;
+}
+#submit{
+    width:300px;
+    text-align: right;
+}
+#submitbtn{
+    background-color:black;
+    border-radius:10px;
+    color:white;
+    width:100px;
+    height:30px;
+    border:2px solid red;
+    transition:0.2s ease;
+    font-family: monospace;
+    cursor: pointer;
+}
+#submitbtn:hover{
+    background-color:red;
+}
+
+select{
+    background-color:black;
+    color: white;
+    font-family:monospace;
+    border-color:black;
+    border-radius: 20%;
+}
+
+
+.sliderContainer{
+    height: 370px;
+    display:flex;
+    flex-direction:row;
+}
+.sliderContainer>*{
+    flex:auto;
+    display:flex;
+    /*justify-content: center;*/
+    align-items:center;
+    height:100%;
+}
+.sliderbtn{
+    width:100px;
+    justify-content: center;
+}
+.sliderbtn >*{
+    height:50px;
+    width:50px;
+    border-radius:100%;
+    border:none;
+    color:white;
+    background-color:black;
+    font-size: large;
+}
+.sliderContainer{
+    overflow:hidden;
+    width:100%;
+    transition:  0.5s ease;
+}
+.slider{
+    justify-content: left;
+    transition:0.5s ease;
+}
+.slide{
+    min-width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.elementContainer{
+    flex:auto;
+    padding:20px;
+    width:45%;
+}
+.slideElement{
+    flex:auto;
+    background-color:red;
+    border-radius:20px;
+    width:100%;
+    height:300px;
+    display:flex;
+}
+.slideBtn{
+    background:none;
+    border:none;
+}
+.slideBtn:hover{
+    cursor: pointer;
+}
+.image{
+    overflow:hidden;
+    border-radius:20px;
+    width:50%;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+}
+.image>*{
+    height:110%;
+    width:110%;
+    border-radius:20px;
+}
+.text{text-align:left;padding-left:20px;color:white;}
+
+.artistiContainer{
+    display:flex;
+    min-width:500px;
+    height:250px;
+
+}
+.artistiContainer div {
+    flex:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:20%;
+    height:100%;
+    flex-direction:column
+}
+.artistiContainer div button{
+    background:none;
+    border:none;
+    height:100%;
+    width:100%;
+}
+.artistiContainer div button:hover{
+    cursor: pointer;
+}
+.artistiContainer div button img{
+    border-radius:20px;
+}
+.docsImageContainer{
+    display:flex;
+    justify-content:center;
+}
+.docsText{
+    font-size:18px;
+    padding-left:30px;
+}
+.docsImageContainer>*{
+    float:center;
+}
+
+.genreCont{
+    height:400px;
+    background: #f20505;
+    background: linear-gradient(rgba(242, 5, 5, 1) 0%, rgba(122, 35, 35, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+.artisti{
+    height: 80%;
+    display:flex;
+}
+.artisti div{
+    width:25%;
+}
+.imgArtista{
+    width:70%;
+    height:70%;
+}
+.imgArtista1{
+    width:90%;height:90%; padding:15px; border-radius:50px;
+}
+.textArtista{
+    text-align:center;
+    padding-top:50px;
+}
+.genreCont h1{
+    padding-top:30px;
+    text-align:center;
+    font-size:75px;
+    color:black;
+    font-family:monospace;
+    font-family: sans-serif;
+}
+.linkToArtist:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.artistPageContainer{
+    min-width: 100%;
+    height:85vh;
+    display:flex;
+}
+.info{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:35%;
+}
+.pubblicazioni{
+    width:75%;
+}
+.singoloBrano{
+    display:flex;
+    width:100%;
+    align-items:center;
+}
+.albumContainer{
+    width:95%; padding:30px; padding-top:20px;
+}
+.singoloAlbum{
+    display:flex;
+    width:100%;
+    align-items:center;
+}

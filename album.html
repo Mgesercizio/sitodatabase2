@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../main.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body onload="changeMainPage()" style="background: #f20505;
+    background: linear-gradient(90deg, rgba(242, 5, 5, 1) 0%, rgba(122, 35, 35, 1) 50%, rgba(0, 0, 0, 1) 100%);">
+    <div class="header">
+        <div> casella 1</div>
+        <div> casella 2</div>
+        <div> casella 3</div>
+        <div> 
+            <select id="select">
+                <option value="default">Documenti</option>
+                <option value="modelloLogico">Modello Logico</option>
+                <option value="modelloER">Modello E/R</option> 
+                <option value="sql"> SQL query</option>
+            </select>
+        </div>
+        <div><a href="../index.html">Torna alla home</a></div>
+    </div><h1 style="font-size:40px;">Album</h1>
+    <div class="albumContainer">
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/bad.png" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Bad &#183; <i>Michael Jackson &#183; 1987</i></div> 
+            <div style="padding-right:10px;"><a href="album/bad.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/imgXscape.png" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Xscape &#183; <i>Michael Jackson &#183; 2014</i></div> 
+            <div style="padding-right:10px;"><a href="album/Xscape.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/unorthodox_jukebox.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Unorthodox Jukekox &#183; <i>Bruno Mars &#183; 2012</i></div> 
+            <div style="padding-right:10px;"><a href="album/unorthodox.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/romantic.webp" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">The Romantic &#183; <i>Bruno Mars &#183; 2026</i></div> 
+            <div style="padding-right:10px;"><a href="album/romantic.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/imgAeroplane.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Aeroplane &#183; <i>Red Hot Chili Peppers &#183; 1995</i></div> 
+            <div style="padding-right:10px;"><a href="album/aeroplane.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/devotion_to_emotion.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Devotion to Emotion &#183; <i>Red Hot Chili Peppers &#183; 2015</i></div> 
+            <div style="padding-right:10px;"><a href="album/devotion.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/appetite-for-destruction.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Appetite for Destruction &#183; <i>Guns n' Roses &#183; 1987</i></div> 
+            <div style="padding-right:10px;"><a href="album/appetite.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/lies.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Lies &#183; <i>Guns n' Roses &#183; 1988</i></div> 
+            <div style="padding-right:10px;"><a href="album/lies.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/oasis.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Oasis &#183; <i>JBalvin &#183; 2019</i></div> 
+            <div style="padding-right:10px;"><a href="album/oasis.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/summerVaction.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Summer Vacation &#183; <i>JBalvin &#183; 2020</i></div> 
+            <div style="padding-right:10px;"><a href="album/summerVacation.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/dtmf.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">Debi Tirar Mas Fotos &#183; <i>Bad Bunny &#183; 2025</i></div> 
+            <div style="padding-right:10px;"><a href="album/dtmf.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/eutdm.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">El ultimo tour del mundo &#183; <i>Bad Bunny &#183; 2025</i></div> 
+            <div style="padding-right:10px;"><a href="album/eutdm.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/imgMarshal_Maters_LP.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">The Marshal Mather LP &#183; <i>Eminem &#183; 2000</i></div> 
+            <div style="padding-right:10px;"><a href="album/mmslp.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+            <div> 
+                <img src="images/imgEminemShow.jpg" style="height:50px;">
+            </div>
+            <div style="width:85%; padding-left:10px;">The Eminen show &#183; <i>Eminem &#183; 2002</i></div> 
+            <div style="padding-right:10px;"><a href="album/eutdm.html">Ascolta</a></div>
+        </div>
+        <hr>
+        <div class="singoloAlbum">
+    <div> 
+        <img src="images/imgGNX.jpg" style="height:50px;">
+    </div>
+    <div style="width:85%; padding-left:10px;">
+        GNX &#183; <i>Kendrick Lamar &#183; 2024</i>
+    </div> 
+    <div style="padding-right:10px;">
+        <a href="album/gnx.html">Ascolta</a>
+    </div>
+</div>
+<hr>
+
+<div class="singoloAlbum">
+    <div> 
+        <img src="images/imgDamn.jpg" style="height:50px;">
+    </div>
+    <div style="width:85%; padding-left:10px;">
+        DAMN. &#183; <i>Kendrick Lamar &#183; 2017</i>
+    </div> 
+    <div style="padding-right:10px;">
+        <a href="album/damn.html">Ascolta</a>
+    </div>
+</div>
+<hr>
+
+<div class="singoloAlbum">
+    <div> 
+        <img src="images/under-the-stars.jpg" style="height:50px;">
+    </div>
+    <div style="width:85%; padding-left:10px;">
+        Under the Stars &#183; <i>Louis Armstrong &#183; 1958</i>
+    </div> 
+    <div style="padding-right:10px;">
+        <a href="album/underTheStars.html">Ascolta</a>
+    </div>
+</div>
+<hr>
+
+<div class="singoloAlbum">
+    <div> 
+        <img src="images/giants-of-jazz.jpg"" style="height:50px;">
+    </div>
+    <div style="width:85%; padding-left:10px;">
+        Giants of Jazz &#183; <i>Louis Armstrong &#183; 1964</i>
+    </div> 
+    <div style="padding-right:10px;">
+        <a href="album/giantsOfJazz.html">Ascolta</a>
+    </div>
+</div>
+<hr>
+
+<div class="singoloAlbum">
+    <div> 
+        <img src="images/spiritual.jpg" style="height:50px;">
+    </div>
+    <div style="width:85%; padding-left:10px;">
+        Spiritual &#183; <i>John Coltrane &#183; 1962</i>
+    </div> 
+    <div style="padding-right:10px;">
+        <a href="album/spiritual.html">Ascolta</a>
+    </div>
+</div>
+<hr>
+
+<div class="singoloAlbum">
+    <div> 
+        <img src="images/my-favourite-things.jpg" style="height:50px;">
+    </div>
+    <div style="width:85%; padding-left:10px;">
+        My Favorite Things &#183; <i>John Coltrane &#183; 1961</i>
+    </div> 
+    <div style="padding-right:10px;">
+        <a href="album/myFavoriteThings.html">Ascolta</a>
+    </div>
+</div>
+<hr>
+    </div>
+</body>
+</html>

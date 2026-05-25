@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Log In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="option">
+                <input class="inputRadio" type="radio" name="btn" value="option1" checked="" onclick="logIntype(true)">
+                <div class="btn">
+                    <span class="span">Log In</span>
+                </div>
+            </div>
+            <div class="option">
+                <input class="inputRadio" type="radio" name="btn" value="option2" onclick="logIntype(false)">
+                <div class="btn">
+                    <span class="span">Sign Up</span>
+                </div>  
+            </div>
+    </div>
+
+    <div class="credentials">
+        Username:<br>
+        <input type="text" id="username">
+        <br><br>
+        Password:<br>
+        <input type="text" id="password">
+    </div>
+
+    <div class="credentials" id="signUp" hidden>
+        Conferma password:<br>
+        <input type="text" id="conferma"><br>
+        Data di nascita:<br>
+        <input type="date" id ="date">
+
+    </div>
+    <div id="submit"><button id="submitbtn" onclick="submit()">Submit</button></div>
+    </div>
+</body>
+</html>

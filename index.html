@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Musify</title>
+</head>
+<body onload="changeMainPage()">
+    <div class="header">
+        <div> casella 1</div>
+        <div> <a href="album.html">Album</a></div>
+        <div> <a href="artisti.html">Artisti</div>
+        <div> 
+            <select id="select">
+                <option value="default">Documenti</option>
+                <option value="modelloLogico">Modello Logico</option>
+                <option value="modelloER">Modello E/R</option> 
+                <option value="sql"> SQL query</option>
+            </select>
+        </div>
+        <div id="LogInPageLink"><a href="logIn.html">Registrati / Accedi</a></div>
+    </div>
+
+    <h1 style="color:red; font-size:50px;">MUSIFY</h1>
+    <div class="generi">
+        <div><button class="btngeneri" onclick="openGenre(0)">Pop</button></div>
+        <div><button class ="btngeneri" onclick="openGenre(1)">Rock</button></div>
+        <div><button class="btngeneri" onclick="openGenre(2)">Latin</button></div>
+        <div><button class ="btngeneri" onclick="openGenre(3)">Rap</button></div>
+        <div><button class ="btngeneri" onclick="openGenre(4)">Jazz</button></div>
+    </div>
+
+    <div class="sliderContainer">
+        <div class="sliderbtn" id="prevBtn">
+            <button onclick="prevSlide()">&#10094;</button>
+        </div>
+        <div class="sliderContainer">
+        <div class ="slider">
+            <div class="slide">
+                <div class="elementContainer">
+                    <button class="slideBtn" onclick="slideClick(1)">
+                    <div class="slideElement">
+                        <div class="image">
+                            <img src="images/img1.jpg">
+                        </div>
+                        <div class="text">
+                            <h1>Scopri i<br>migliori<br>album</h1><br>
+                            <h4>Una collezione degli album che <br><br>
+                            hanno fatto la storia della musica,<br><br> dagli anni 80 alla<br><br>
+                             musica moderna</h4>
+                        </div>
+                    </div>
+                    </button>
+                </div>
+                <div class="elementContainer">
+                    <button class="slideBtn" onclick="slideClick(2)">
+                    <div class="slideElement">
+                        <div class="image">
+                            <img src="images/img2.webp">
+                        </div>
+                        <div class="text">
+                            <h1>Musica<br> Latina</h1><br>
+                            <h4>Un' intera nuova sezione<br><br> dedicata alla musica del sud-america,<br><br> ascolta ora
+                        </div>
+                    </div>
+                    </button>
+                </div>
+            </div>
+            <div class="slide">
+                 <div class="elementContainer">
+                    <button class="slideBtn" onclick="slideClick(3)">
+                    <div class="slideElement">
+                        <div class="image">
+                            <img src="images/img3.jpg">
+                        </div>
+                        <div class="text">
+                            <br><br><br>
+                            <h2>Il jazz che ha <br>cambiato la storia<br>, una nota alla volta.<br>
+                                Entra nel mondo senza <br>tempo di Louis 
+                                <br>Armstrong.
+                            </h2>
+                        </div>
+                    </div>
+                    </button>
+                </div>
+                <div class="elementContainer">
+                    <button class="slideBtn" onclick="slideClick(4)">
+                    <div class="slideElement">
+                        <div class="image">
+                            <img src="images/img4.png">
+                        </div>
+                        <div class="text">
+                            <br><br><br><br><br>
+                            <h2>Tutta la musica<br> che ami.<br>
+                                Il meglio della musica,
+                                <br> selezionato per te.
+                            </h2>
+                        </div>
+                    </div>
+                    </button>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="elementContainer">
+                    <button class="slideBtn" onclick="slideClick(5)">
+                    <div class="slideElement">
+                        <div class="image">
+                            <img src="images/img5.jpg">
+                        </div>
+                        <div class="text">
+                            <br><br><br><br>
+                            <h2>Benvenuto nel caos<br> leggendario dei<br> Guns N' Roses. <br>
+                            Un catalogo fatto
+                            <br> di pura leggenda rock. 
+                            </h2>
+                        </div>
+                    </div>
+                    </button>
+                </div>
+                <div class="elementContainer">
+                    <button class="slideBtn" onclick="slideClick(6)">
+                    <div class="slideElement">
+                        <div class="image">
+                            <img src="images/img6.png">
+                        </div>
+                        <div class="text">
+                            <br><br><br><br>
+                            <h2>Dal freestyle alla leggenda.<br>
+                                Dai ritmo alle tue giornate <br>con il ritmo di eminem e<br> del suo 
+                                <br>album più famoso
+                            </h2>
+                        </div>
+                    </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="sliderbtn" id="nextBtn">
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+</body>
+</html>
